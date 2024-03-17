@@ -2,23 +2,33 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>施工中！</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>7-century-mc</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <audio src="./audios/Click_pitch0.5.ogg" id="clickButtonAudio"></audio>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="" alt="">
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">MCServer</a></li>
-                    <li><a href="#">Links</a></li>
-                </ul>
-            </nav>
-            <a href="index.html" class="cta"><button>Contact</button></a>
-        </header>
-
+    <!-- 顶部导航栏 -->
+    <div class="top-bar">
+            <svg class="icon" width="288" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.68 15.98">
+                <text class="" transform="translate(0 10.04)">
+                    7CenturyMinecraft
+                </text>
+            </svg>
+        <div class="nav">
+            <ul class="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">MCServer</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Links</a></li>
+            </ul>
+            <button class="shareButton" id="shareButton">
+                <span class="text">分享</span>
+            </button>
+        </div>
+    </div>
+    <div class="main">
         <h1>施工中！</h1>
         <h3>这是咕咕咕咕咕咕，本页面由Crystal1920自动生成</h3>
         <ul>
@@ -26,7 +36,20 @@
             <li>您可以想办法催群友修改、删除或覆盖本页面</li>
             <li>别问地图信息，请急急急急急</li>
         </ul>
+        
     </div>
+    
+        
+    
 </body>
+<script>
+    const audio = document.getElementById('clickButtonAudio');
+    const button = document.getElementById('shareButton');
 
+    button.addEventListener('click',()=> {
+        audio.play();
+    });
+
+    
+</script>
 </html>
