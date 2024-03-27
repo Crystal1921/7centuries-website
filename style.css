@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* reset.css start */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: '微软雅黑';
+    padding: 0;
+    margin: 0;
+}
+/* reset.css end */
+
+
+
+/* 顶部导航栏 */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 30px 10%; */
+    flex-wrap: nowrap;
+}
+/* icon 文字logo 开始 */
+.icon {
+    flex-shrink: 0;
+    padding-left: 30px;
+}
+svg text {
+    font-size:12px;
+    /* font-weight: 900; */
+    /* stroke-width: 1px; */
+    font-family:SegoeScript, Segoe Script;
+    fill: transparent;
+    stroke: black;
+    /* letter-spacing: 4px; */
+    stroke-dasharray: 100%!important;
+    stroke-dashoffset: 100%;
+    animation: line-anm 4s forwards;
+  }
+
+@keyframes line-anm {
+to {
+    stroke-dashoffset: 0;
+}
+}
+
+/* top-nav start */
+.level1 {
+    position: relative;
+    top: -50px;
+    margin: 100px;
+    list-style: none;
+}
+
+.level1 > li{
+    position: relative;
+    float: left;
+    border: 1px solid #1F4B15;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+
+.level1 > li a:hover{
+    color: #0088a9;
+}
+
+.level2 {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    display: none;
+    border-left: 1px solid #FECC5B;
+    border-right: 1px solid #FECC5B;
+    width: 100%;
+    list-style: none;
+}
+
+li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 41px;
+    text-decoration: none;
+}
+
+.shareButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Minecraft', sans-serif; /* Assuming you have a Minecraft font */
+    font-size: 18px;
+    background-color: #2e2e2e;
+    border: 2px solid #878787;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+ }
+
+ .shareButton:hover{
+    background-color: #878787;
+    border-color: #2e2e2e;
+    transform: translateY(-2px);
+ }
+
+ .shareButton:active{
+    transform: scale(0.8);
+ }
+
+ /* top-nav end */
+
+ /* content start */
+ .content {
+    max-width: 1100px;
+    margin: 0 auto;
+ }
+ /* content end */
+
+ /* footer start */
+ .footer {
+    position: relative;
+    bottom: 0px;
+    padding: 35px;
+    text-align: center;
+    background-color: #878787;
+ }
+
+  /* footer end */
+
+  /* 返回顶部 */
+  .back {
+    position: fixed;
+    right: 120px;
+    bottom: 150px;
+  }
